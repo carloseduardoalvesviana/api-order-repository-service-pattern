@@ -1,0 +1,36 @@
+### Create Order
+POST http://127.0.0.1:8000/api/orders HTTP/1.1
+content-type: application/json
+accept: application/json
+
+{
+    "product_name": "Pizza",
+    "quantity": 3,
+    "price": 80.9
+}
+
+### List Orders
+GET http://127.0.0.1:8000/api/orders HTTP/1.1
+content-type: application/json
+accept: application/json
+
+### Get Order
+GET http://127.0.0.1:8000/api/orders/1 HTTP/1.1
+content-type: application/json
+accept: application/json
+
+### Update Order
+PUT http://127.0.0.1:8000/api/orders/1 HTTP/1.1
+content-type: application/json
+accept: application/json
+
+{
+    "product_name": "Pizza",
+    "quantity": 5,
+    "price": 120.90
+}
+
+### Delete Order
+DELETE http://127.0.0.1:8000/api/orders/1 HTTP/1.1
+content-type: application/json
+accept: application/json
